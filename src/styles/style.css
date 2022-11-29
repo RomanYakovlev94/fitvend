@@ -129,7 +129,7 @@ p {
 .general__inside-heading {
   padding-top: 225px;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 26px;
   line-height: 2;
   font-weight: 300;
   opacity: 0.65;
@@ -265,7 +265,7 @@ p {
 }
 
 .about {
-  padding-top: 25px !important;
+  padding-top: 70px !important;
 }
 
 .about__items {
@@ -299,18 +299,12 @@ p {
   width: 95%;
   max-width: 1160px;
   height: 320px;
-  text-align: center;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 38px;
+  font-weight: 200;
+  padding-top: 10px;
+  padding-left: 20px;
+  line-height: 1.3;
   position: relative;
 }
 
@@ -326,7 +320,7 @@ p {
   transition: opacity 0.5s;
   top: 0px;
   left: 0px;
-  background-color: #37f31e;
+  background-color: #FFED02;
   width: 100%;
   height: 100%;
   font-size: 18px;
@@ -343,19 +337,13 @@ p {
   background-position: center;
   width: 95%;
   height: 320px;
-  text-align: center;
   margin: 30px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 38px;
+  font-weight: 200;
+  padding-top: 10px;
+  padding-left: 20px;
   position: relative;
+  color: #fff;
 }
 
 .about__items-wrap-power-1:hover .about__items-wrap-power-1-2 {
@@ -370,7 +358,7 @@ p {
   transition: opacity 0.5s;
   top: 0px;
   left: 0px;
-  background-color: #80c8f8;
+  background-color: #FFED02;
   color: #66baf2;
   width: 100%;
   height: 100%;
@@ -386,18 +374,11 @@ p {
   background-position: center;
   width: 95%;
   height: 320px;
-  text-align: center;
   margin: 30px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 38px;
+  font-weight: 200;
+  padding-top: 10px;
+  padding-left: 20px;
   position: relative;
 }
 
@@ -413,7 +394,7 @@ p {
   transition: opacity 0.5s;
   top: 0px;
   left: 0px;
-  background-color: #80c8f8;
+  background-color: #FFED02;
   color: #66baf2;
   width: 100%;
   height: 100%;
@@ -423,7 +404,7 @@ p {
 
 .description-text {
   height: 100%;
-  margin-top: 1vw;
+  margin-top: 2vw;
   text-align: center;
   color: black;
   font-size: 18px;
@@ -770,5 +751,81 @@ p {
   width: 80%;
   margin: 0 auto;
   max-width: 450px;
+}
+
+@media screen and (min-width: 700px) {
+  .general__inside-video {
+    z-index: -1;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100vw;
+  }
+  .general__inside-heading {
+    padding-top: 225px;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 2;
+    font-weight: 300;
+    opacity: 0.65;
+    margin-left: 25px;
+  }
+  .general__inside-img {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .general__inside-img .img-general {
+    max-width: 95vw;
+  }
+  .general__inside-text {
+    margin-top: 100px;
+    margin-left: 25px;
+    color: #ffffff;
+    font-size: 41px;
+    line-height: 55px;
+    font-weight: 200;
+    opacity: 0.85;
+  }
+  .general__inside-mouse {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/mouse.svg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    opacity: 1;
+    margin-top: auto;
+  }
+  .general__inside-mouse-scroll {
+    position: absolute;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: bounce-1;
+            animation-name: bounce-1;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  .general__inside-moot {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/nosound.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    opacity: 0.65;
+  }
+  .general__inside-moot1 {
+    background-image: url("../img/sound.svg");
+  }
 }
 /*# sourceMappingURL=style.css.map */
