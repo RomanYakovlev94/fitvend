@@ -263,7 +263,7 @@ p{
             &-power{
                 &-1{
                     //box-sizing: border-box;
-                    background-image: url("../img/ledn2.jpeg");
+                    background-image: url("../img/banner_advantages.jpeg");
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -310,7 +310,7 @@ p{
                 
                 &-1{
                     //box-sizing: border-box;
-                    background-image: url("../img/ledn3.jpeg");
+                    background-image: url("../img/banner_service.jpeg");
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -362,6 +362,19 @@ p{
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 18px;
+}
+
+
+.slider{
+    .swiper{
+        &-wrapper{
+            .swiper-slide{
+                &_video{
+                    max-width: 100vw;
+                }
+            }
+        }
+    }
 }
 
 .partners{

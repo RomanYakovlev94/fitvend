@@ -17,7 +17,6 @@ muteButton.addEventListener('click', () => {
 togglerNav.addEventListener('click', () => {
     if(togglerNav.classList.contains("collapsed")){
         burgerNav.classList.remove("navbar-close");
-        console.log(1);
     }else{
         burgerNav.classList.add("navbar-close")
     };
