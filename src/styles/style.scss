@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 // variables
 $general-color: #f266c1;
 $general-color-2: #66baf2;
@@ -10,7 +10,7 @@ $color-yellow: #FFED02;
 
 body{
     background-color: #fff;
-    font-family: "Arial", sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: #fff;
 }
 
@@ -69,15 +69,11 @@ p{
             max-width: 100vw;
             width: 100%;
             .nav-item{
-                
-                //line-height: 1.17;
-                //text-shadow: black;
+
                 .nav-link{
                     font-weight: 300;
                     font-size: 21px;
-                    font-family: "Arial", sans-serif;
                     color: #ffffff;
-                    //-webkit-text-stroke: 0.7px rgb(63, 63, 63);
                 }
             }
         }
@@ -366,12 +362,33 @@ p{
 
 
 .slider{
+    background-color: #171717;
+    padding-top: 92px;
+    &-name{
+        color: #fff;
+        font-size: 32px;
+        font-weight: 300;
+    }
     .swiper{
         &-wrapper{
             .swiper-slide{
+                text-align: center;
                 &_video{
-                    max-width: 100vw;
+                    width: 100vw;
+                    max-width: 425px;
                 }
+            }
+        }
+        &-pagination{
+            top: 0;
+            max-height: 70px;
+            &-bullet{
+                width: 30px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 0px;
+                margin: 2px !important;
+                padding: 0;
             }
         }
     }
@@ -410,6 +427,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: $color-grey;
     &__text{
         width: 100%;
         max-width: 500px;
@@ -648,54 +666,54 @@ p{
 
 
 
-@media screen and (min-width: 959px){
-    .container-fluid{
-        max-width: 1160px;
-    }
+// @media screen and (min-width: 959px){
+//     .container-fluid{
+//         max-width: 1160px;
+//     }
     
-    .about__items-wrap {
-        margin-top: 50px;
-        display: flex;
-        max-width: 1160px;
-        justify-content: space-between;
+//     .about__items-wrap {
+//         margin-top: 50px;
+//         display: flex;
+//         max-width: 1160px;
+//         justify-content: space-between;
 
-    }
-    .about-flex{
-        width: 37vw;
-        max-width: 550px;
-    }
-    .general{
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: 30px 115px;
-        height: 730px;
-        position: relative;
-        &__inside{
-            position: absolute;
-            right: 220px;
-            top: 220px;
-            width: 300px;
-        }
-        &-logo{
-            width: 350px;
-        }
-    }
-    .description-text{
-        font-size: 21px;
-    }
-    .about-comp{
-        display: flex;
-        justify-content: space-around;
-        &__text{
-            margin-top: 50px;
-            max-width: 600px;
+//     }
+//     .about-flex{
+//         width: 37vw;
+//         max-width: 550px;
+//     }
+//     .general{
+//         background-size: 75%;
+//         background-repeat: no-repeat;
+//         background-position: 30px 115px;
+//         height: 730px;
+//         position: relative;
+//         &__inside{
+//             position: absolute;
+//             right: 220px;
+//             top: 220px;
+//             width: 300px;
+//         }
+//         &-logo{
+//             width: 350px;
+//         }
+//     }
+//     .description-text{
+//         font-size: 21px;
+//     }
+//     .about-comp{
+//         display: flex;
+//         justify-content: space-around;
+//         &__text{
+//             margin-top: 50px;
+//             max-width: 600px;
 
-        }
-    }
-    .mission{
-        min-height: 1050px !important;
-    }
-    .easy__wrapper{
-        flex-direction: row;
-    }
-}
+//         }
+//     }
+//     .mission{
+//         min-height: 1050px !important;
+//     }
+//     .easy__wrapper{
+//         flex-direction: row;
+//     }
+// }

@@ -21,3 +21,22 @@ togglerNav.addEventListener('click', () => {
         burgerNav.classList.add("navbar-close")
     };
 });
+
+new Swiper (".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    // simulateTouch: true,
+    // touchRatio: 1,
+    // touchAngle: 45,
+    // grabCursor: true,
+    // touchAngle: 45,
+    // mousewheel: true,
+    //keyboard: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    // spaceBetween: 30,
+});

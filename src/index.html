@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
     <title>FitVend</title>
 
 </head>
@@ -50,7 +54,7 @@
         <div class="general__inside-text">крупнейший оператор протеиновых аппаратов в России</div>
         <video class="general__inside-video" id="general__inside-video" preload="auto" playsinline="" autoplay="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/doy09ioqw542ha5/Fitvend_mainpage_01.mp4?dl=0" type="video/mp4"></video>
         <div class="general__inside-mouse">
-          <img src="/src/img/device-scroll.svg" alt="device-scroll" class="general__inside-mouse-scroll">
+          <img src="img/device-scroll.svg" alt="device-scroll" class="general__inside-mouse-scroll">
         </div>
         <div class="general__inside-moot" id="general__inside-moot"></div>
       </div>
@@ -85,12 +89,13 @@
     </section>
 
     <section class="slider">
-      <div class="swiper">
+      <div class="slider-name">ОТЗЫВЫ</div>
+      <div class="swiper mySwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
+            <video class="swiper-slide_video" preload="metadata" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
           </div>
           <div class="swiper-slide">
             <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/h7mbr2a0zkwcdcn/3.mp4?dl=0" type="video/mp4"></video>
@@ -108,47 +113,36 @@
             <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/vlrezysv1gwjptg/7.mp4?dl=0" type="video/mp4"></video>
           </div>
           <div class="swiper-slide">
-            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
+            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/pylpvw016r5tr6a/474FEF743C19D3D164CE289F2C740C86_video_dashinit.mp4?dl=0" type="video/mp4"></video>
           </div>
           <div class="swiper-slide">
-            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
+            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/skls71knhd0pr97/564DE44E7B88DBC39E1A6BBA5BD1B5A0_video_dashinit.mp4?dl=0" type="video/mp4"></video>
           </div>
           <div class="swiper-slide">
-            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
+            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/e1uai0tlyhg9ue7/5C4523ECEF93C6C44657370CF6202C9E_video_dashinit.mp4?dl=0" type="video/mp4"></video>
           </div>
           <div class="swiper-slide">
-            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0" type="video/mp4"></video>
+            <video class="swiper-slide_video" preload="auto" playsinline="" loop="" muted=""> <source src="http://dl.dropboxusercontent.com/s/yi7fqb0ly2njhwk/1.mp4?dl=0" type="video/mp4"></video>
           </div>
           
         </div>
-<!-- 
-        '1' : 'http://dl.dropboxusercontent.com/s/d9yg2896o8001bg/2.mp4?dl=0',
-        '2' : 'http://dl.dropboxusercontent.com/s/h7mbr2a0zkwcdcn/3.mp4?dl=0',
-        '3' : 'http://dl.dropboxusercontent.com/s/p3o33hiwx834a9v/4.mp4?dl=0',
-        '4' : 'http://dl.dropboxusercontent.com/s/n099kpavb1mv1j5/5.mp4?dl=0',
-        '5' : 'http://dl.dropboxusercontent.com/s/ji1ipeoob4reu9l/6.mp4?dl=0',
-        '6' : 'http://dl.dropboxusercontent.com/s/vlrezysv1gwjptg/7.mp4?dl=0',
-        '7' : 'http://dl.dropboxusercontent.com/s/pylpvw016r5tr6a/474FEF743C19D3D164CE289F2C740C86_video_dashinit.mp4?dl=0',
-        '8' : 'http://dl.dropboxusercontent.com/s/skls71knhd0pr97/564DE44E7B88DBC39E1A6BBA5BD1B5A0_video_dashinit.mp4?dl=0',
-        '9' : 'http://dl.dropboxusercontent.com/s/e1uai0tlyhg9ue7/5C4523ECEF93C6C44657370CF6202C9E_video_dashinit.mp4?dl=0',
-        '10' : 'http://dl.dropboxusercontent.com/s/yi7fqb0ly2njhwk/1.mp4?dl=0' -->
 
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
       
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>  -->
       
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </section>
 
     <section class="partners ">
       <div class="partners__image">
         <p class="partners__image-text">НАШИ ПАРТНЕРЫ</p>
-        <div class="parents__image-item"><img src="/src/img/partners.png" alt="partners" class="x" width="100%"></div>  
+        <div class="parents__image-item"><img src="img/partners.png" alt="partners" class="x" width="100%"></div>  
       </div>
     </section>
 
@@ -202,8 +196,6 @@
       req.send(new FormData(event.target));
       }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+
 </body>
 </html>
