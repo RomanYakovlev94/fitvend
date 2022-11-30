@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 // variables
-$general-color: #f266c1;
-$general-color-2: #66baf2;
+// $general-color: #f266c1;
+// $general-color-2: #66baf2;
 $general-color-3: #FFED02;
-$bc-card: #80c8f8;
+// $bc-card: #80c8f8;
 
 $color-grey: rgba(42,51,59,1);
 $color-yellow: #FFED02;
@@ -25,12 +25,9 @@ p{
 
 .span-markup{
     color:$general-color-3;
-    //background-color: #fff;
-    //-webkit-text-stroke: 0.1px rgb(149, 146, 82);
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
-    //padding: 3px;
 }
 
 .root{
@@ -107,7 +104,8 @@ p{
 .general{
     &__inside{
         position: relative;
-        height: 100vh;   
+        height: 100vh;
+        max-height: 730px;   
         display: flex;
         flex-direction: column;
         &-video{
@@ -181,6 +179,10 @@ p{
             background-image: url("../img/sound.svg");
         }
     }
+}
+
+.mouse-page{
+    margin-top: auto;
 }
 
 @keyframes bounce-1 {
@@ -321,9 +323,10 @@ p{
 .description-text{
     height: 100%;
     margin-top: 2vw;
-    text-align: center;
+    //text-align: center;
     color: rgb(0, 0, 0);
     font-size: 18px;
+    padding: 15px;
 }
 
 
@@ -389,23 +392,23 @@ p{
 
 .partners{
     background-color: #fff;
+    padding: 0 10px 0 10px;
     margin-top: 25px;
     color: #fff;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 32px;
     &__image{
         margin: 0 auto;
         width: 100%;
         max-width: 1160px;
         &-text{
-            padding-top: 25px;
-            text-align: center;
+            padding-top: 45px;
             color: black;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
             background-color: #fff;
+            font-weight: 300;
         }
-        &-item{
-            
+        &-item{   
             width: 100px;
         }
     }
@@ -415,8 +418,8 @@ p{
 .footer{
     margin: 0 auto;
     max-width: 1160px;
-    margin-top: 25px;
-    padding: 10px;
+    margin-top: 105px;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -424,52 +427,66 @@ p{
     &__text{
         width: 100%;
         max-width: 500px;
+        margin-bottom: 120px;
         &-heading{
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 70px;
         }
         &-description{
-            font-size: 18px;
-            font-weight: 700;
-            margin-top: 40px;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 70px;
         }
         &-phone{
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 400;
             margin-top: 20px;
         }
         &-mail{
             margin-top: 20px;
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 400;
         }
     }
     &-form{
         width: 100%;
         max-width: 500px;
+        margin-bottom: 90px;
     }
     
 }
 
 #submit{
-    background-color: #0073ff;
+    background-color: $color-yellow;
     border: none;
 }
 
 #textarea-class{
     resize: none;
     width: 100%;
-    min-height: 200px;
-    margin-top: 5px;
+    min-height: 135px;
+    margin-top: 10px;
     border: none;
+    &::placeholder{
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
 }
 
 .footer input{
-    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
     width: 100%;
     height: 50px;
     font-weight: bold;
     border: none;
+    &::placeholder{
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
 }
 
 
