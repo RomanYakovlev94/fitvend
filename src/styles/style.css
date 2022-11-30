@@ -815,37 +815,13 @@ p {
 }
 
 @media screen and (min-width: 700px) {
-  .general__inside-video {
-    z-index: -1;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100vw;
+  .general__inside {
+    min-height: 100vh;
   }
   .general__inside-heading {
-    padding-top: 225px;
-    color: #ffffff;
-    font-size: 26px;
-    line-height: 2;
-    font-weight: 300;
-    opacity: 0.65;
     margin-left: 25px;
   }
-  .general__inside-img {
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-  .general__inside-img .img-general {
-    max-width: 95vw;
-  }
   .general__inside-text {
-    margin-top: 100px;
     margin-left: 25px;
     color: #ffffff;
     font-size: 41px;
@@ -854,39 +830,20 @@ p {
     opacity: 0.85;
   }
   .general__inside-mouse {
-    position: relative;
-    width: 65px;
-    height: 65px;
-    background-image: url("../img/mouse.svg");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    opacity: 1;
-    margin-top: auto;
-  }
-  .general__inside-mouse-scroll {
-    position: absolute;
-    -webkit-animation-duration: 3.5s;
-            animation-duration: 3.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-name: bounce-1;
-            animation-name: bounce-1;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
+    width: 90px;
+    height: 90px;
   }
   .general__inside-moot {
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/nosound.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-    opacity: 0.65;
+    width: 55px;
+    height: 55px;
   }
   .general__inside-moot1 {
     background-image: url("../img/sound.svg");
+  }
+  .about-text {
+    font-size: 46px;
+    padding-top: 30px;
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
