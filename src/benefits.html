@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Преимущества</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="js/script-all-pages.js"></script>
+    <title>FitVend Преимущества</title>
+
 </head>
 <body>
     <div class="root">
         <section class="hedder">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="100px"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <a class="navbar-brand" href="index.html"><img src="img/logo_fitvend_01.jpg" alt="logo" class="navbar-brand-img"></a>
+                  <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">О компании</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">О КОМПАНИИ</a>
                       </li>                     
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="benefits.html">Преимущества</a>
+                        <a class="nav-link active" aria-current="page" href="benefits.html">ПРЕИМУЩЕСТВА</a>
                       </li>                     
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="service.html">Сервис</a>
+                        <a class="nav-link active" aria-current="page" href="service.html">СЕРВИС</a>
                       </li>                     
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Видео</a>
+                        <a class="nav-link active" aria-current="page" href="#">ВИДЕО</a>
                       </li>                     
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#foot-contact">Контакты</a>
+                        <a class="nav-link active" aria-current="page" href="#foot-contact">КОНТАКТЫ</a>
+                      </li>                     
+                      <li class="nav-item">
+                        <a class="nav-link active" id="en" aria-current="page" href="#foot-contact">EN</a>
                       </li>                     
                     </ul>
                   </div>
@@ -101,27 +110,29 @@
         </div>
     </section>
 
-    <section class="footer wrapper" id="foot-contact">
-        <div class="footer__text">
+    <section class="footer " id="foot-contact">
+        <div class="wrapper-footer">
+          <div class="footer__text">
             <p class="footer__text-heading">У вас есть вопрос?</p>
             <p class="footer__text-description">Сформулируйте его максимально подробно, чтобы мы могли ответить на него максимально детально.</p>
             <p class="footer__text-phone">Либо свяжитесь с нами по телефону <br><span class="span-markup">+7 495 111 31 31</span></p>
             <p class="footer__text-mail">или отправьте письмо на <br><span class="span-markup">info@fitvend.ru</span></p>
-        </div>
-        <form class="footer-form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
-            <p>Имя</p>
-            <input placeholder="Представьтесь" name="name" type="text" >
-            <p>Email</p>
-            <input placeholder="Укажите почту" name="email" type="text" >
-            <p>Телефон</p>
-            <input placeholder="+7 900 00 00" name="telephone" type="tel" >
-            <p>Сообщение</p>
-            <textarea id="textarea-class" name="texta" placeholder="Ваш текст"></textarea>
+          </div>
+          <form class="footer-form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+            <!-- <p>Имя</p> -->
+            <input placeholder="Имя" name="name" type="text" >
+            <!-- <p>Телефон</p> -->
+            <input placeholder="+7 (999) 999-99-99" name="telephone" type="tel" >
+            <!-- <p>Email</p> -->
+            <input placeholder="E-mail" name="email" type="text" >
+            <!-- <p>Сообщение</p> -->
+            <textarea id="textarea-class" name="texta" placeholder="Вопрос"></textarea>
             <!-- <p>Прикрепить файлы</p>
             <input type="file" name="myfile[]" multiple id="myfile"> -->
             <p><input id="submit" value="Отправить" type="submit"></p>
-        </form>
-    </section>
+          </form>
+        </div>
+      </section>
   
   
     <script>
@@ -151,6 +162,6 @@
         req.send(new FormData(event.target));
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

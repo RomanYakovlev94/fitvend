@@ -68,9 +68,28 @@ new Swiper (".mySwiper", {
     // touchAngle: 45,
     // mousewheel: true,
     //keyboard: true,
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    centeredSlides: true,
+    spaceBetween: 30,
+    slidesPerView: 5,
+    // effect: 'coverflow',
+    // slidesPerView: 1,
+    // breakpoints:{
+    //     990: {
+    //         slidesPerView: 2,
+    //         coverflowEffect : {
+    //             rotate: 0,
+    //             // stretch: 30,
+    //             slideShadows: true,
+    //         }
+    //     },
+    //     1025:{
+    //         slidesPerView: 3,
+    //     }
     // },
-    // spaceBetween: 30,
+    
+
 });
