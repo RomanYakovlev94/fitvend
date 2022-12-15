@@ -23,6 +23,11 @@ p {
   font-weight: 600;
 }
 
+.span-losung {
+  color: #ff4800;
+  font-weight: 700;
+}
+
 .span-markup a {
   text-decoration: none;
   outline: none;
@@ -117,6 +122,10 @@ p {
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%282550, 255, 255, 0.90%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M0 7h42M0 15h42M0 23h42'/%3e%3c/svg%3e");
+}
+
+.general {
+  padding-top: 50px;
 }
 
 .general__inside {
@@ -463,30 +472,6 @@ p {
   transition: max-height 0.5s;
 }
 
-.slider .swiper-wrapper .swiper-slide > video {
-  max-height: 500px;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-}
-
-.slider .swiper-wrapper .swiper-slide-next > video {
-  max-height: 530px;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-}
-
-.slider .swiper-wrapper .swiper-slide-active > video {
-  max-height: 570px;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-}
-
-.slider .swiper-wrapper .swiper-slide-prev > video {
-  max-height: 530px;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-}
-
 .slider .swiper-wrapper .swiper-slide_video {
   max-width: 330px;
   max-height: 570px;
@@ -696,6 +681,156 @@ p {
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
+}
+
+.about-comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 100vh;
+  min-height: 665px;
+  color: #000;
+  background-color: #FFED02;
+  padding-top: 90px;
+}
+
+.about-comp__text {
+  margin-bottom: auto;
+}
+
+.about-comp__text-heading {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 55px;
+  padding: 0 15px;
+}
+
+.about-comp__text-description {
+  line-height: 1.7em;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.about-comp__image {
+  position: absolute;
+  bottom: 0;
+  max-width: 425px;
+}
+
+.investing {
+  font-family: 'Mulish', sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin-top: 60px;
+}
+
+.investing__heading {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.5em;
+  padding: 0 15px;
+}
+
+.investing__list {
+  margin-top: 30px;
+}
+
+.investing__list-item {
+  font-family: 'Mulish', sans-serif;
+  position: relative;
+  line-height: 1.7;
+  padding: 15px;
+  font-size: 20px;
+  padding-left: 50px;
+  font-weight: 400;
+}
+
+.investing__list-item::before {
+  position: absolute;
+  content: '';
+  left: -10px;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/ok.svg");
+  background-size: cover;
+}
+
+.losung {
+  background-color: #EFEFEF;
+}
+
+.losung__heading {
+  margin-top: 60px;
+  padding: 90px 15px;
+  font-family: 'Mulish', sans-serif;
+  color: #000;
+  text-align: center;
+  max-width: 940px;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 1.8;
+}
+
+.about-video {
+  padding: 90px 15px;
+}
+
+.about-video__wrapper {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-video__wrapper-item {
+  width: 90vw;
+  max-width: 600px;
+}
+
+.about-video__wrapper-play {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/video_play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: calc(50% - 25px);
+  right: calc(50% - 25px);
+}
+
+.mission {
+  margin-top: 60px;
+  color: #000;
+  font-family: 'Mulish', sans-serif;
+}
+
+.mission__heading {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 55px;
+  padding: 0 15px;
+}
+
+.mission__points {
+  line-height: 1.7em;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
 }
 
 .easy__heading {

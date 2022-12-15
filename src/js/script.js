@@ -74,7 +74,7 @@ new Swiper (".mySwiper", {
     },
     centeredSlides: true,
     spaceBetween: 30,
-    slidesPerView: 5,
+    slidesPerView: 1,
     // effect: 'coverflow',
     // slidesPerView: 1,
     // breakpoints:{

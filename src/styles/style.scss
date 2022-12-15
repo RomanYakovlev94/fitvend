@@ -9,6 +9,10 @@ $color-grey: rgba(42,51,59,1);
 $color-yellow: #FFED02;
 $width-cards: 95%;
 
+@mixin font-mulish {
+    font-family: 'Mulish', sans-serif;
+}
+
 body{
     background-color: #fff;
     font-family: 'Mulish', sans-serif;
@@ -31,6 +35,10 @@ p{
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
+}
+.span-losung{
+    color: #ff4800;
+    font-weight: 700;
 }
 
 .span-markup a{
@@ -121,6 +129,7 @@ p{
 
 
 .general{
+    padding-top: 50px;
     &__inside{
         position: relative;
         height: 100vh;
@@ -373,22 +382,25 @@ p{
 
                 // background-color: #ff000000;
                 // max-width: 330px;
-                & > video {
-                    max-height: 500px;
-                    transition: max-height 0.5s;
-                }
-                &-next > video{
-                    max-height: 530px;
-                    transition: max-height 0.5s;
-                }
-                &-active > video{
-                    max-height: 570px;
-                    transition: max-height 0.5s;
-                }
-                &-prev > video{
-                    max-height: 530px;
-                    transition: max-height 0.5s;
-                }
+
+
+
+                // & > video {
+                //     max-height: 500px;
+                //     transition: max-height 0.5s;
+                // }
+                // &-next > video{
+                //     max-height: 530px;
+                //     transition: max-height 0.5s;
+                // }
+                // &-active > video{
+                //     max-height: 570px;
+                //     transition: max-height 0.5s;
+                // }
+                // &-prev > video{
+                //     max-height: 530px;
+                //     transition: max-height 0.5s;
+                // }
                 &_video{
                     // width: 100vw;
                     max-width: 330px;
@@ -548,82 +560,142 @@ p{
 
 
 
+// About
+.about-comp{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    // justify-content: space-around;
+    position: relative;
+    height: 100vh;
+    min-height: 665px;
+    color: #000;
+    background-color: #FFED02;
+    padding-top: 90px;
+    &__text{
+        margin-bottom: auto;
+        &-heading{
+            // text-align: center;
+            @include font-mulish;
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 55px;
+            padding: 0 15px;
+        }
+        &-description{
+            line-height: 1.7em;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+        }
+    }
+    &__image{
+        position: absolute;
+        bottom: 0;
+        max-width: 425px;
+        &-item{
 
+        }
+    }
+}
 
-//About
-// .about-comp{
-//     padding-top: 110px;
-//     padding-bottom: 25px;
-//     &__text{
-//         &-heading{
-//             text-align: center;
-//             font-weight: 600;
-//             font-size: 28px;
-//             line-height: 1.5em;
-//         }
-//         &-description{
-//             line-height: 1.7em;
-//             padding: 10px;
-//             font-size: 18px;
-//         }
-//     }
-//     &__image{
-//         max-width: 425px;
-//     }
-// }
+.investing{
+    @include font-mulish;
+    background-color: #fff;
+    color: #000;
+    margin-top: 60px;
+    &__heading{
+        // text-align: center;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 1.5em;
+        padding: 0 15px;
+    }
+    &__list{
+        margin-top: 30px;
+        &-item{
+            @include font-mulish;
+            position: relative;
+            line-height: 1.7;
+            padding: 15px;
+            font-size: 20px;
+            padding-left: 50px;
+            font-weight: 400;
+            &::before{
+                position: absolute;
+                content: '';
+                left: -10px;
+                top: 12px;
+                width: 40px;
+                height: 40px;
+                background-image: url("../img/ok.svg");
+                background-size: cover;
+            }
+        }
+    }
+}
 
-// .investing{
-//     background-color: #fff;
-//     padding-top: 30px;
-//     padding-bottom: 25px;
-//     &__heading{
-//         text-align: center;
-//         font-weight: 600;
-//         font-size: 28px;
-//         line-height: 1.5em;
-//     }
-//     &__list{
-//         margin-top: 10px;
-//         &-item{
-//             position: relative;
-//             line-height: 1.7em;
-//             padding: 10px;
-//             font-size: 18px;
-//             padding-left: 15px;
-//             &::before{
-//                 position: absolute;
-//                 content: '';
-//                 left: -20px;
-//                 top: 12px;
-//                 width: 25px;
-//                 height: 25px;
-//                 background-image: url("../img/ok.png");
-//                 background-size: cover;
-//             }
-//         }
-//     }
-// }
+.losung{
+    background-color: #EFEFEF;
+    &__heading{
+        margin-top: 60px;
+        padding: 90px 15px;
+        @include font-mulish;
+        color: #000;
+        text-align: center;
+        max-width: 940px;
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 1.8;
+    }
+}
 
-// .mission{
-//     min-height: 700px;
-//     background-image: url("../img/1.png");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center bottom;
-//     border-bottom: 1px solid white;
-//     &__heading{
-//         padding-top: 25px;
-//         text-align: center;
-//         font-weight: 600;
-//         font-size: 28px;
-//         line-height: 1.5em;
-//     }
-//     &__points{
-//         line-height: 1.7em;
-//         padding: 10px;
-//         font-size: 18px;
-//     }
-// }
+.about-video{
+    // height: 400px;
+    padding: 90px 15px;
+    &__wrapper{
+        position: relative;
+        width: 90vw;
+        max-width: 600px;
+        margin: 0 auto;
+        &-item{
+            width: 90vw;
+            max-width: 600px;
+        }
+        &-play{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url("../img/video_play.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: calc(50% - 25px);
+            right: calc(50% - 25px);
+        }
+    }
+}
+
+.mission{
+    margin-top: 60px;
+    color: #000;
+    @include font-mulish;
+    &__heading{
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 55px;
+        padding: 0 15px;
+    }
+    &__points{
+        line-height: 1.7em;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+    }
+}
 
 // //Benefits
 
