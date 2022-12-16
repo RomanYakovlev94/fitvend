@@ -133,7 +133,7 @@ p{
     &__inside{
         position: relative;
         height: 100vh;
-        max-height: 730px;   
+        max-height: 680px;   
         display: flex;
         flex-direction: column;
         &-video{
@@ -568,7 +568,7 @@ p{
     // justify-content: space-around;
     position: relative;
     height: 100vh;
-    min-height: 665px;
+    max-height: 730px;
     color: #000;
     background-color: #FFED02;
     padding-top: 90px;
@@ -695,6 +695,92 @@ p{
         font-weight: 400;
         letter-spacing: -0.2px;
     }
+}
+
+//Video
+.video-comp{
+    viewport-fit: cover;
+    margin-bottom: 90px;
+    position: relative;
+    height: 100vh;
+    max-height: 730px;
+    // max-height: -webkit-fill-available;
+    color: #000;
+    background-color: #FFED02;
+    padding-top: 75px;
+    &__text{
+        position: relative;
+        z-index: 10;
+        margin-bottom: auto;
+        &-heading{
+            // text-align: center;
+            @include font-mulish;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 55px;
+            padding: 0 15px;
+        }
+        &-description{
+            line-height: 1.7em;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+        }
+    }
+    &__image{
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 425px;
+        &-item{
+
+        }
+    }
+}
+
+.top-video{
+    // height: 400px;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 90px;
+    &__heading{
+        color: #000;
+        text-align: start;
+        font-size: 32px;
+        font-weight: 300;
+    }
+    &__wrapper{
+        margin-top: 90px !important;
+        position: relative;
+        width: 90vw;
+        max-width: 960px;
+        margin: 0 auto;
+        &-item{
+            width: 90vw;
+            max-width: 960px;
+        }
+        &-play{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url("../img/video_play.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: calc(50% - 25px);
+            right: calc(50% - 25px);
+        }
+    }
+    &__link{
+        color: #ec5401;
+    }
+}
+
+.reviews{
+    padding-top: 90px;
+    background-color:#EFEFEF;
 }
 
 // //Benefits
