@@ -132,8 +132,8 @@ p{
     padding-top: 50px;
     &__inside{
         position: relative;
-        height: 100vh;
-        max-height: 680px;   
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
         display: flex;
         flex-direction: column;
         &-video{
@@ -567,8 +567,8 @@ p{
     flex-direction: column;
     // justify-content: space-around;
     position: relative;
-    height: 100vh;
-    max-height: 730px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     color: #000;
     background-color: #FFED02;
     padding-top: 90px;
@@ -702,8 +702,8 @@ p{
     viewport-fit: cover;
     margin-bottom: 90px;
     position: relative;
-    height: 100vh;
-    max-height: 730px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     // max-height: -webkit-fill-available;
     color: #000;
     background-color: #FFED02;
