@@ -115,8 +115,8 @@ p {
 }
 .general__inside {
   position: relative;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
 }
@@ -573,8 +573,8 @@ p {
   flex-grow: 1;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  min-height: 665px;
   color: #000;
   background-color: #FFED02;
   padding-top: 90px;
@@ -697,11 +697,10 @@ p {
 }
 
 .video-comp {
-  viewport-fit: cover;
   margin-bottom: 90px;
   position: relative;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  max-height: 730px;
   color: #000;
   background-color: #FFED02;
   padding-top: 75px;
@@ -774,42 +773,92 @@ p {
   background-color: #EFEFEF;
 }
 
-.easy__heading {
-  text-align: center;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.5em;
+.benefits {
+  color: #000;
+  background-color: #FFED02;
+  padding-top: 100px;
+  height: 100vh;
+  max-height: 730px;
+  position: relative;
 }
-.easy__wrapper {
-  margin-top: 15px;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.benefits__items-text {
+  position: relative;
 }
-.easy__wrapper-card {
-  margin: 0 auto;
-  margin-top: 20px;
-  max-width: 405px;
+.benefits__items-text-heading {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 55px;
+  padding: 0 15px;
+}
+.benefits__items-text-description {
+  line-height: 1.7em;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.benefits__items-image {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 90%;
+  max-width: 550px;
 }
 
-.sertificate__heading {
-  margin-top: 45px;
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide {
   text-align: center;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.5em;
 }
-.sertificate__wrap {
-  padding: 10px;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 450px;
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide > .swiper-apparat-img {
+  max-width: 20vw;
+  transition: max-width 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-next > .swiper-apparat-img {
+  max-width: 20vw;
+  transition: max-width 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-active > .swiper-apparat-img {
+  max-width: 25vw;
+  transition: max-width 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-prev > .swiper-apparat-img {
+  max-width: 20vw;
+  transition: max-width 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide .swiper-apparat-img {
+  max-width: 20vw;
+}
+.apparat-slider .swiper-button-prev {
+  width: 44px;
+  left: 30px;
+}
+.apparat-slider .swiper-button-prev::after {
+  content: "";
+}
+.apparat-slider .swiper-button-next {
+  color: #ecf0f1;
+  width: 44px;
+  right: 30px;
+}
+.apparat-slider .swiper-button-next::after {
+  content: "";
+}
+
+.territory {
+  color: #000;
+}
+.territory .terrirory__description {
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  line-height: 1.7;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 700px) {
-  .general__inside {
-    min-height: 100vh;
+  .general {
+    height: 100vh;
   }
   .general__inside-heading {
     margin-left: 25px;

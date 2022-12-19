@@ -132,8 +132,8 @@ p{
     padding-top: 50px;
     &__inside{
         position: relative;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
+        height: 100vh;
+        height: -webkit-fill-available;
         display: flex;
         flex-direction: column;
         &-video{
@@ -567,8 +567,8 @@ p{
     flex-direction: column;
     // justify-content: space-around;
     position: relative;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    min-height: 665px;
     color: #000;
     background-color: #FFED02;
     padding-top: 90px;
@@ -699,12 +699,15 @@ p{
 
 //Video
 .video-comp{
-    viewport-fit: cover;
     margin-bottom: 90px;
+    // display: flex;
+    // flex-grow: 1;
+    // flex-direction: column;
+    // justify-content: space-around;
     position: relative;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    // max-height: -webkit-fill-available;
+    height: 100vh;
+    max-height: 730px;
+    // min-height: -webkit-fill-available;
     color: #000;
     background-color: #FFED02;
     padding-top: 75px;
@@ -785,46 +788,99 @@ p{
 
 // //Benefits
 
-// .benefits{
-//     padding-top: 100px;
-//     &__items{
-        
-//         &-text{
-            
-//             &-heading{
-//                 text-align: center;
-//                 font-weight: 600;
-//                 font-size: 28px;
-//                 line-height: 1.5em;
-//             }
-//             &-description{
-//                 line-height: 1.7em;
-//                 padding: 10px;
-//                 font-size: 18px;
-//             }
-//         }
-//         &-image{
-//             width: 80%;
-//             margin: 0 auto;
-//             max-width: 550px;
-//             margin-bottom: 25px;
-//         }
-//     }
-// }
-// .terrirory__image{
-//     max-width: 350px;
-//     margin: 0 auto;
-    
-// }
-// .terrirory__description{
-//     line-height: 1.7em;
-//     padding: 10px;
-//     font-size: 18px;
-//     padding-top: 25px;
-// }
+.benefits{
+    color: #000;
+    background-color:#FFED02;
+    padding-top: 100px;
+    height: 100vh;
+    max-height: 730px;
+    position: relative;
+    // height: -webkit-fill-available;
+    &__items{
+        &-text{    
+            position: relative;
+            &-heading{
+                @include font-mulish;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 55px;
+                padding: 0 15px;
+            }
+            &-description{
+                line-height: 1.7em;
+                padding: 15px;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: -0.2px;
+            }
+        }
+        &-image{
+            position: absolute;
+            bottom: 0;
+            right: 5%;
+            width: 90%;
+            // margin: 0 auto;
+            max-width: 550px;
+        }
+    }
+}
+
+.apparat-slider{
+    .apparat-slider-swiper{
+        .swiper-wrapper{
+            // max-width: 70%;
+            .swiper-slide{
+                text-align: center;
+                & > .swiper-apparat-img{
+                    max-width: 20vw;
+                    transition: max-width 0.5s;
+                }
+                &-next > .swiper-apparat-img{
+                    max-width: 20vw;
+                    transition: max-width 0.5s;
+                }
+                &-active > .swiper-apparat-img{
+                    max-width: 25vw;
+                    transition: max-width 0.5s;
+                }
+                &-prev > .swiper-apparat-img{
+                    max-width: 20vw;
+                    transition: max-width 0.5s;
+                }
+                .swiper-apparat-img{
+                    max-width: 20vw;
+                }
+            }
+        }
+    }
+    .swiper-button-prev{
+        // background-image: url("../img/left-btn.png");
+        // background-position: center;
+        // background-size: cover;
+        width: 44px;
+        left: 30px;
+        &::after{
+            content: "";
+        }
+    }
+    .swiper-button-next{
+        color:#ecf0f1;
+        // background-color:#171717;
+        // background-image: url("../img/right-btn.png");
+        // background-position: center;
+        // background-size: cover;
+        width: 44px;
+        right: 30px;
+        &::after{
+            content: "";
+        }
+    }
+}
 
 // .for-partners{
+   
 //     &__heading{
+//         color: #000;
 //         text-align: center;
 //         font-weight: 600;
 //         font-size: 28px;
@@ -844,58 +900,31 @@ p{
 //                 top: 12px;
 //                 width: 25px;
 //                 height: 25px;
-//                 background-image: url("../img/ok.png");
+//                 background-image: url("../img/ok.svg");
 //                 background-size: cover;
 //             }
 //         }
 //     }
 // }
 
-.easy{
-    &__heading{
-        text-align: center;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 1.5em;
-    }
-    &__wrapper{
-        margin-top: 15px;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        &-card{
-            margin: 0 auto;
-            margin-top: 20px;
-            max-width: 405px;
-        }
+.territory{
+    color: #000;
+    .terrirory__description{
+        color: #000;
+        @include font-mulish;
+        line-height: 1.7;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: 400;
     }
 }
-
-.sertificate{
-    &__heading{
-        margin-top: 45px;
-        text-align: center;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 1.5em;
-    }
-    &__wrap{
-        padding: 10px;
-        width: 80%;
-        margin: 0 auto;
-        max-width: 450px;
-        //&__photo{}
-    }
-}
-
-
 
 @media screen and (min-width: 700px){
 
     .general{
+        height: 100vh;
         &__inside{
-            min-height: 100vh;
+            // min-height: 100vh;
             &-heading{
                 margin-left: 25px;
             }
