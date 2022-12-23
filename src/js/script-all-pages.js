@@ -40,6 +40,6 @@ new Swiper (".apparat-slider-swiper", {
     },
     centeredSlides: true,
     spaceBetween: 30,
-    slidesPerView: 3,
+    slidesPerView: 5,
     loop: true,
 });

@@ -806,42 +806,38 @@ p {
   max-width: 550px;
 }
 
+.apparat-slider .apparat-slider-swiper .swiper-wrapper {
+  height: 70vh;
+  align-items: baseline;
+}
 .apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide {
   text-align: center;
-}
-.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide > .swiper-apparat-img {
-  max-width: 20vw;
-  transition: max-width 0.5s;
-}
-.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-next > .swiper-apparat-img {
-  max-width: 20vw;
-  transition: max-width 0.5s;
-}
-.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-active > .swiper-apparat-img {
-  max-width: 25vw;
-  transition: max-width 0.5s;
-}
-.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-prev > .swiper-apparat-img {
-  max-width: 20vw;
-  transition: max-width 0.5s;
+  height: 70vh;
+  max-height: 70vh;
 }
 .apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide .swiper-apparat-img {
-  max-width: 20vw;
+  height: 50vh;
+  filter: blur(3px);
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-next > img {
+  transition: height 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-active > img {
+  height: 70vh !important;
+  filter: blur(0px) !important;
+  transition: height 0.5s;
+}
+.apparat-slider .apparat-slider-swiper .swiper-wrapper .swiper-slide-prev > img {
+  transition: height 0.5s;
 }
 .apparat-slider .swiper-button-prev {
   width: 44px;
   left: 30px;
 }
-.apparat-slider .swiper-button-prev::after {
-  content: "";
-}
 .apparat-slider .swiper-button-next {
   color: #ecf0f1;
   width: 44px;
   right: 30px;
-}
-.apparat-slider .swiper-button-next::after {
-  content: "";
 }
 
 .territory {
