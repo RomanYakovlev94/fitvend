@@ -40,6 +40,11 @@ new Swiper (".apparat-slider-swiper", {
     },
     centeredSlides: true,
     spaceBetween: 30,
-    slidesPerView: 5,
+    slidesPerView: 3,
     loop: true,
+        breakpoints:{
+        426: {
+            slidesPerView: 5
+        }
+    },
 });
