@@ -41,6 +41,11 @@ strong {
   font-weight: 600;
 }
 
+.yellow-span {
+  color: #FFED02;
+  opacity: 0.8;
+}
+
 .root {
   position: fixed;
   z-index: 50;
