@@ -39,6 +39,9 @@ new Swiper (".apparat-slider-swiper", {
         prevEl: ".swiper-button-prev",
     },
     centeredSlides: true,
+    autoplay: {
+        delay: 2000,
+    },
     spaceBetween: 30,
     slidesPerView: 3,
     loop: true,

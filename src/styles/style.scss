@@ -397,12 +397,8 @@ strong{
                 position: relative;
                 margin-top: auto;
                 transition: max-height 0.5s;
-
                 // background-color: #ff000000;
                 // max-width: 330px;
-
-
-
                 // & > video {
                 //     max-height: 500px;
                 //     transition: max-height 0.5s;
@@ -464,6 +460,104 @@ strong{
             }
         }
     }
+}
+//for slider_________________________
+@media screen and (min-width:1025px){
+    .slider{
+        background-color: #171717;
+        padding-top: 92px;
+        height: 1000px;
+        &-name{
+            color: #fff;
+            font-size: 32px;
+            font-weight: 300;
+            width: 95%;
+            max-width: 1160px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .swiper{
+            &-wrapper{
+                height: 750px;
+                align-items: baseline;
+                .swiper-slide{
+                    text-align: center;
+                    position: relative;
+                    margin-top: 0;
+                    transition: max-height 0.5s;
+                    background-color: #ff000000;
+                    max-width: 330px;
+                    max-height: 580px;
+                    & > video {
+                        // max-height: 530px;
+                        // transition: max-height 0.5s;
+                        height: 560px;
+                        max-width: 17vw;
+                    }
+                    &-next > video{
+                        // max-height: 530px;
+                        // transition: max-height 0.5s;
+                        transition: scale 0.5s;
+                    }
+                    &-active > video{
+                        // max-height: 570px;
+                        // transition: max-height 0.5s;
+                        scale: 1.1;
+                        transition: scale 0.5s;
+                    }
+                    &-prev > video{
+                        // max-height: 530px;
+                        // transition: max-height 0.5s;
+                        transition: scale 0.5s;
+                    }
+                    &_video{
+                        // width: 100vw;
+                        // max-width: 330px;
+                    }
+                    &_play{
+                        position: absolute;
+                        margin: auto;
+                        width: 60px;
+                        height: 60px;
+                        background-image: url("../img/video_play.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        top: calc(50% - 30px);
+                        right: calc(50% - 30px);
+                    }
+                    &_sound{
+                        position: absolute;
+                        display: none;
+                        margin: auto;
+                        width: 60px;
+                        height: 60px;
+                        background-image: url("../img/volume_video.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        top: calc(50% - 30px);
+                        right: calc(50% - 30px);
+                    }
+                }
+            }
+            &-pagination{
+                top:auto;
+                bottom: 0px;
+                max-height: 70px;
+                &-bullet{
+                    // padding: 3px 0 !important;
+                    width: 45px;
+                    height: 2px;
+                    background-color: #fff;
+                    border-radius: 0px;
+                    margin: 5px 2px !important;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    
 }
 
 .hide{
@@ -1266,17 +1360,17 @@ strong{
                 }
                 &-next > img{
                     // height: 50vh !important;
-                    transition: width, height 0.5s;
+                    transition: width, height 1.5s;
                 }
                 &-active > img {
                     height: 250px !important;
                     width: 130px;
                     filter: blur(0px) !important;
-                    transition: width, height 0.5s;
+                    transition: width, height 1.5s;
                 }
                 &-prev > img{
                     // height: 50vh !important;
-                    transition: width, height 0.5s;
+                    transition: width, height 1.5s;
                 }
                 
             }
