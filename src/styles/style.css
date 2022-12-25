@@ -13,6 +13,11 @@ strong {
   font-weight: 600;
 }
 
+@media screen and (min-width: 990px) {
+  .max-w {
+    max-width: 565px !important;
+  }
+}
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
