@@ -38,7 +38,7 @@ try {
     $mail->setFrom('lettersentfromsite@gmail.com', 'FitVend'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('romanpirs6082@gmail.com');  
+    $mail->addAddress('info@fitvend.ru');  
     //$mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
     // Прикрипление файлов к письму
