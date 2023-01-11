@@ -30,5 +30,8 @@
 		"build": "NODE_ENV=production gulp build",
 		"clean": "gulp clean",
 		"server": "gulp server"
+	},
+	"dependencies": {
+		"imask": "^6.4.3"
 	}
 }

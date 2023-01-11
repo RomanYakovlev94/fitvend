@@ -379,7 +379,6 @@ strong {
   color: #66baf2;
   width: 100%;
   height: 100%;
-  border: 3px solid #dbf0ff;
   font-size: 18px;
 }
 
@@ -534,6 +533,11 @@ strong {
     padding: 0;
   }
 }
+@media screen and (min-width: 1025px) {
+  .slider .swiper-wrapper .swiper-slide > video {
+    max-width: 14vw;
+  }
+}
 .hide {
   display: none;
   color: #ecf0f1;
@@ -620,28 +624,25 @@ strong {
   min-height: 135px;
   margin-top: 10px;
   border: none;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 #textarea-class::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 #textarea-class:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 #textarea-class::placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 
 .footer input {
   margin: 10px 0 10px 0;
+  padding-left: 10px;
   width: 100%;
   height: 50px;
   font-weight: bold;
@@ -650,17 +651,14 @@ strong {
 .footer input::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
 }
 .footer input:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
 }
 .footer input::placeholder {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
 }
 
 .about-comp {
@@ -2229,5 +2227,10 @@ strong {
   }
   .about__items-wrap-service-1 {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .slider .swiper-wrapper .swiper-slide > video {
+    max-width: 14vw;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -89,6 +89,12 @@ new Swiper (".mySwiper", {
         },
         1025:{
             slidesPerView: 5,
+        },
+        1440:{
+            slidesPerView: 5.5,
+        },
+        1910:{
+            slidesPerView: 6,
         }
     },
     

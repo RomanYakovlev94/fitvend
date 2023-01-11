@@ -117,3 +117,4 @@ exports.dev = gulp.parallel(
     watch,
     gulp.series(clean, js, pug, svg, stylus, images, server)
 );
+exports.hjs = gulp.series(js, stylus, html);
