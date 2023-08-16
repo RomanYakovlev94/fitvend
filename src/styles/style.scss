@@ -1087,6 +1087,7 @@ strong{
             font-size: 38px;
             line-height: 55px;
             padding: 0 15px;
+            margin-top: 60px;
         }
         &-description{
             line-height: 1.7em;
@@ -1152,7 +1153,7 @@ strong{
 }
 
 
-@media screen and (min-width: 426px){
+@media screen and (min-width: 451px){
     .video-comp{
         margin-bottom: 90px;
         position: relative;
@@ -1233,6 +1234,7 @@ strong{
 }
 @media screen and (min-width: 1025px){
     .video-comp{
+        margin-bottom: 45px;
         &__text{
             margin-bottom: auto;
             padding-left: 0vw;
@@ -1248,7 +1250,7 @@ strong{
         }
         &__image{
             bottom: 0;
-            right: 22vw;
+            right: 29vw;
             // &-item{
             // }
         }
@@ -2408,7 +2410,7 @@ strong{
             }
         }
         &-nav{
-            width: 640px !important;
+            width: 750px !important;
             .nav-link{
                 font-size: 16px !important;
                 margin-right: 10px;
@@ -2476,4 +2478,122 @@ strong{
     .slider .swiper-wrapper .swiper-slide > video {
         max-width: 14vw;
     }    
+}
+
+
+
+// new video (styles for points list)
+.text_points{
+    max-width: 1170px;
+    width: 80vw;
+    margin: 0 auto;
+    color:#171717;
+    // padding-top: 120px;
+    
+    &_text{
+        @include font-mulish;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.span-markup_points{
+    color: #ec5401;
+}
+
+.points_address{
+    color: #171717;
+    @include font-mulish;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.5em;
+    padding: 0 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.points_assort{
+    color: #171717;
+    @include font-mulish;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.5em;
+    padding: 0 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table_points{
+    color: #000;
+    width: 100%;
+}
+.table_points_wrapper{
+    max-width: 1170px;
+    width: 100vw;
+    margin: 0 auto;
+}
+.th_1{
+    border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+        width: 10vw;
+}
+.th_2{
+    border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+        width: 30vw;
+}
+.th_3{
+    border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+        width: 50vw;
+        height: 100px;
+}
+.td_1{
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    width: 10vw;
+}
+.td_2{
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    width: 50vw;
+    hyphens: auto;
+}
+.td_3{
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+    width: 30vw;
+    height: 100px;
+    hyphens: auto;
+}
+.card_rec{
+    background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        color: #171717;
+        width: 80vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+}
+.card_rec h2 {
+    margin-top: 0;
+}
+
+.link-info{
+    // text-decoration: none;
+    color: #ec5401;
+}
+.link-info-msk{
+    // text-decoration: none;
+    color: #ec5401;
 }

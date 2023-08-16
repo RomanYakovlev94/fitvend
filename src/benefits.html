@@ -1,205 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script defer src="js/inputmask.min.js"></script>
-    <script defer src="js/just-validate.min.js"></script>
-    <script defer src="js/send.js"></script>
-    <script defer src="js/script-all-pages.js"></script>
-    <!-- <script src="js/jquery-3.6.3.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="js/inputmask.min.js"></script>
+		<script defer src="js/just-validate.min.js"></script>
+		<script defer src="js/send.js"></script>
+		<script defer src="js/script-all-pages.js"></script>
+		<!-- <script src="js/jquery-3.6.3.js"></script> -->
+		<!-- <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles/benefits.css">
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.mousewheel.min.js"></script> -->
-  
-    <title>FitVend - Преимущества</title>
 
-</head>
-<body>
-    <div class="root">
-        <section class="hedder">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="img/logo_fitvend_01.jpg" alt="logo" class="navbar-brand-img"></a>
-                  <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">О КОМПАНИИ</a>
-                      </li>                     
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="benefits.html"><span class="yellow-span">ПРЕИМУЩЕСТВА</span></a>
-                      </li>                     
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="service.html">СЕРВИС</a>
-                      </li>                     
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="video.html">ВИДЕО</a>
-                      </li>                     
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#foot-contact">КОНТАКТЫ</a>
-                      </li>                     
-                      <li class="nav-item">
-                        <a class="nav-link active" id="en" aria-current="page" href="benefits-en.html">EN</a>
-                      </li>                     
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </section>
-    </div>
+		<title>FitVend - Преимущества</title>
+	</head>
+	<body>
+		<div class="root">
+			<section class="hedder">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html"
+							><img
+								src="img/logo_fitvend_01.jpg"
+								alt="logo"
+								class="navbar-brand-img"
+						/></a>
+						<button
+							class="navbar-toggler"
+							id="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mb-lg-0">
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="about.html"
+										>О КОМПАНИИ</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="benefits.html"
+										><span class="yellow-span">ПРЕИМУЩЕСТВА</span></a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="service.html"
+										>СЕРВИС</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="pay-info.html"
+										>СПОСОБЫ ОПЛАТЫ</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="#foot-contact"
+										>КОНТАКТЫ</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										id="en"
+										aria-current="page"
+										href="benefits-en.html"
+										>EN</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</section>
+		</div>
 
-    <section class="benefits">
-      <div class="wrapper">
-        <div class="benefits__items">
-            <div class="benefits__items-text">
-                <div class="benefits__items-text-heading">НАШИ ПРЕИМУЩЕСТВА:</div>
-                <div class="benefits__items-text-description">ФитВенд в рамках своей деятельности приобретает протеиновые автоматы самого современного образца и размещает ТЦ на территории Москвы, Подмосковья и Санкт-Петербурга.</div>
-            </div>
-            <div class="benefits__items-image"><img src="img/nat-top-map.png" alt="map" class="benefits-top-image" width="100%"></div>
-        </div>
-      </div>  
-    </section>
+		<section class="benefits">
+			<div class="wrapper">
+				<div class="benefits__items">
+					<div class="benefits__items-text">
+						<div class="benefits__items-text-heading">НАШИ ПРЕИМУЩЕСТВА:</div>
+						<div class="benefits__items-text-description">
+							ФитВенд в рамках своей деятельности приобретает протеиновые
+							автоматы самого современного образца и размещает ТЦ на территории
+							Москвы, Подмосковья и Санкт-Петербурга.
+						</div>
+					</div>
+					<div class="benefits__items-image">
+						<img
+							src="img/nat-top-map.png"
+							alt="map"
+							class="benefits-top-image"
+							width="100%"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="territory wrapper">
-        <div class="terrirory__description">ФитВенд на всей своей территории присутствия является эксклюзивным оператором протеиновых автоматов Shaker Touch.
-        <br><br>
-        Внешнее обрамление аппаратов представляет собой эксклюзивный дизайн проект. При размещении аппаратов также брендируем в фирменный стиль фитнес клубов.
-        <br><br>
-        Представляем вниманию примеры вариантов брендирования аппаратов как наших дизайн проектов, так и некоторых сетевых фитнес клубов:</div>
-    </section>
+		<section class="territory wrapper">
+			<div class="terrirory__description">
+				ФитВенд на всей своей территории присутствия является эксклюзивным
+				оператором протеиновых автоматов Shaker Touch. <br /><br />
+				Внешнее обрамление аппаратов представляет собой эксклюзивный дизайн
+				проект. При размещении аппаратов также брендируем в фирменный стиль
+				фитнес клубов.
+				<br /><br />
+				Представляем вниманию примеры вариантов брендирования аппаратов как
+				наших дизайн проектов, так и некоторых сетевых фитнес клубов:
+			</div>
+		</section>
 
-    <section class="apparat-slider">
-      <div class="swiper apparat-slider-swiper">
-        <div class="swiper-wrapper">
-          <!-- <div class="swiper-slide"><img src="img/apparat-1.png" alt="" class="swiper-apparat-img"></div>
+		<section class="apparat-slider">
+			<div class="swiper apparat-slider-swiper">
+				<div class="swiper-wrapper">
+					<!-- <div class="swiper-slide"><img src="img/apparat-1.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-2.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-3.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-4.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-5.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-6.png" alt="" class="swiper-apparat-img"></div>
           <div class="swiper-slide"><img src="img/apparat-7.png" alt="" class="swiper-apparat-img"></div> -->
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/mkhsafjluazq4m0/machine_02.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/xpxohciozv8qujl/machine_01.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/2btvwn1413dmkdm/machine_03.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/swolt4kt2ws31e5/machine_05.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/uwinkpuy57rhaem/machine_06.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/c35r9vkkgwh6h87/machine_07.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/w13bebdwpknz663/machine_08.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/uekidlh6g1of8vw/machine_09.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/yw08x8k68gjamjl/machine_11.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          <div class="swiper-slide"><img src="http://dl.dropboxusercontent.com/s/yxbdigi0yknspht/machine_12.png?dl=0" alt="" class="swiper-apparat-img"></div>
-          
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/mkhsafjluazq4m0/machine_02.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/xpxohciozv8qujl/machine_01.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/2btvwn1413dmkdm/machine_03.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/swolt4kt2ws31e5/machine_05.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/uwinkpuy57rhaem/machine_06.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/c35r9vkkgwh6h87/machine_07.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/w13bebdwpknz663/machine_08.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/uekidlh6g1of8vw/machine_09.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/yw08x8k68gjamjl/machine_11.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							src="http://dl.dropboxusercontent.com/s/yxbdigi0yknspht/machine_12.png?dl=0"
+							alt=""
+							class="swiper-apparat-img"
+						/>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
 
-    <section class="fitness-club">
-      <div class="fitness-club__wrapper">
-        <div class="fitness-club__wrapper-heading">Преимущества для фитнес-клубов:</div>
-        <div class="fitness-club__wrapper-grid">
-          <div class="grid-item">
-            <div class="grid-item__heading">Всегда в наличии</div>
-            <div class="grid-item__description">Бесперебойное наличие всех видов свежих, холодных спортивных напитков (протеины, пред-треники, BCAA и др.)</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Дополнительный доход</div>
-            <div class="grid-item__description">Дополнительный доход, минимизация расходов до нуля, увеличение прибыли клуба</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Рекламная площадь</div>
-            <div class="grid-item__description">Дополнительная зона размещения рекламы клуба на мониторе аппарата</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Персонал</div>
-            <div class="grid-item__description">Отсутствие вопросов и расходов, связанных с персоналом</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Сервис 24/7</div>
-            <div class="grid-item__description">Предоставление услуги потребителям 24/7, доступность до и после работы бара, удобный, современный сервис</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Высокая конверсия</div>
-            <div class="grid-item__description">Высокая конверсия (по сравнению с стационарным баром)</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="people">
-      <div class="people__wrapper">
-        .<div class="people__wrapper-heading">Преимущества для членов клуба:</div>
-        <div class="people__wrapper-grid">
-          <div class="grid-item">
-            <div class="grid-item__heading">Идеальный коктейль</div>
-            <div class="grid-item__description">Всегда идеальное смешивание (высокая точность подачи дозировок), вкус и качество свежих протеиновых коктейлей из автоматов превосходит коктейли, изготовленные другими способами (электрический миксер, ручной шейкер)</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Экономия времени</div>
-            <div class="grid-item__description">Высокая скорость приготовления коктейлей. Это займет меньше минуты</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Пространство выбора</div>
-            <div class="grid-item__description">Гарантированное наличие любимых напитков (ФитВенд имеет прямые договора
-              с производителями Спортивного питания)</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Бесконтактная покупка</div>
-            <div class="grid-item__description">В нашем аппарате можно приобрести коктейль как по карте, так же спомощью QR code СБП и мобильного телефона</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Соблюдение санитарных норм</div>
-            <div class="grid-item__description">Наши аппараты регулярно обслуживаются командой техников, которые следят за чистотой и сроками годности продуктов</div>
-          </div>
-          <div class="grid-item">
-            <div class="grid-item__heading">Удобство, современность</div>
-            <div class="grid-item__description">Новейшая разработка, которая постоянно модернизируется, добавляются новые функции в ногу со временем</div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="fitness-club">
+			<div class="fitness-club__wrapper">
+				<div class="fitness-club__wrapper-heading">
+					Преимущества для фитнес-клубов:
+				</div>
+				<div class="fitness-club__wrapper-grid">
+					<div class="grid-item">
+						<div class="grid-item__heading">Всегда в наличии</div>
+						<div class="grid-item__description">
+							Бесперебойное наличие всех видов свежих, холодных спортивных
+							напитков (протеины, пред-треники, BCAA и др.)
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Дополнительный доход</div>
+						<div class="grid-item__description">
+							Дополнительный доход, минимизация расходов до нуля, увеличение
+							прибыли клуба
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Рекламная площадь</div>
+						<div class="grid-item__description">
+							Дополнительная зона размещения рекламы клуба на мониторе аппарата
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Персонал</div>
+						<div class="grid-item__description">
+							Отсутствие вопросов и расходов, связанных с персоналом
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Сервис 24/7</div>
+						<div class="grid-item__description">
+							Предоставление услуги потребителям 24/7, доступность до и после
+							работы бара, удобный, современный сервис
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Высокая конверсия</div>
+						<div class="grid-item__description">
+							Высокая конверсия (по сравнению с стационарным баром)
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="footer " id="foot-contact">
-        <div class="wrapper-footer">
-          <div class="footer__text">
-            <p class="footer__text-heading">У вас есть вопрос?</p>
-            <p class="footer__text-description">Сформулируйте его максимально подробно, чтобы мы могли ответить на него максимально детально.</p>
-            <p class="footer__text-phone">Либо свяжитесь с нами по телефону <br><span class="span-markup">+7 495 111 31 31</span></p>
-            <p class="footer__text-mail">или отправьте письмо на <br><span class="span-markup">info@fitvend.ru</span></p>
-          </div>
-          <form class="footer-form" enctype="multipart/form-data" method="POST" id="form"> 
-            <!-- <p>Имя</p> -->
-            <input class="input-name" placeholder="Имя" data-validate-field="name" name="name" type="text" >
-            <!-- <p>Телефон</p> -->
-            <input class="input-tel" placeholder="+7 (999) 999-99-99" data-validate-field="tel" name="telephone" id="teleph" type="tel" >
-            <!-- <p>Email</p> -->
-            <input class="input-mail" placeholder="E-mail" data-validate-field="email" name="email" type="text" >
-            <!-- <p>Сообщение</p> -->
-            <textarea id="textarea-class" name="texta" placeholder="Вопрос"></textarea>
-            <!-- <p>Прикрепить файлы</p>
+		<section class="people">
+			<div class="people__wrapper">
+				.
+				<div class="people__wrapper-heading">
+					Преимущества для членов клуба:
+				</div>
+				<div class="people__wrapper-grid">
+					<div class="grid-item">
+						<div class="grid-item__heading">Идеальный коктейль</div>
+						<div class="grid-item__description">
+							Всегда идеальное смешивание (высокая точность подачи дозировок),
+							вкус и качество свежих протеиновых коктейлей из автоматов
+							превосходит коктейли, изготовленные другими способами
+							(электрический миксер, ручной шейкер)
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Экономия времени</div>
+						<div class="grid-item__description">
+							Высокая скорость приготовления коктейлей. Это займет меньше минуты
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Пространство выбора</div>
+						<div class="grid-item__description">
+							Гарантированное наличие любимых напитков (ФитВенд имеет прямые
+							договора с производителями Спортивного питания)
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Бесконтактная покупка</div>
+						<div class="grid-item__description">
+							В нашем аппарате можно приобрести коктейль как по карте, так же
+							спомощью QR code СБП и мобильного телефона
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Соблюдение санитарных норм</div>
+						<div class="grid-item__description">
+							Наши аппараты регулярно обслуживаются командой техников, которые
+							следят за чистотой и сроками годности продуктов
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="grid-item__heading">Удобство, современность</div>
+						<div class="grid-item__description">
+							Новейшая разработка, которая постоянно модернизируется,
+							добавляются новые функции в ногу со временем
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer " id="foot-contact">
+			<div class="wrapper-footer">
+				<div class="footer__text">
+					<p class="footer__text-heading">У вас есть вопрос?</p>
+					<p class="footer__text-description">
+						Сформулируйте его максимально подробно, чтобы мы могли ответить на
+						него максимально детально.
+					</p>
+					<p class="footer__text-phone">
+						Либо свяжитесь с нами по телефону <br /><span class="span-markup"
+							>+7 495 111 31 31</span
+						>
+					</p>
+					<p class="footer__text-mail">
+						или отправьте письмо на <br /><span class="span-markup"
+							>info@fitvend.ru</span
+						>
+					</p>
+				</div>
+				<form
+					class="footer-form"
+					enctype="multipart/form-data"
+					method="POST"
+					id="form"
+				>
+					<!-- <p>Имя</p> -->
+					<input
+						class="input-name"
+						placeholder="Имя"
+						data-validate-field="name"
+						name="name"
+						type="text"
+					/>
+					<!-- <p>Телефон</p> -->
+					<input
+						class="input-tel"
+						placeholder="+7 (999) 999-99-99"
+						data-validate-field="tel"
+						name="telephone"
+						id="teleph"
+						type="tel"
+					/>
+					<!-- <p>Email</p> -->
+					<input
+						class="input-mail"
+						placeholder="E-mail"
+						data-validate-field="email"
+						name="email"
+						type="text"
+					/>
+					<!-- <p>Сообщение</p> -->
+					<textarea
+						id="textarea-class"
+						name="texta"
+						placeholder="Вопрос"
+					></textarea>
+					<!-- <p>Прикрепить файлы</p>
             <input type="file" name="myfile[]" multiple id="myfile"> -->
-            <p><input id="submit" value="Отправить" type="submit"></p>
-          </form>
-        </div>
-      </section>
-  
-      
-      <!-- <script>
+					<p><input id="submit" value="Отправить" type="submit" /></p>
+				</form>
+			</div>
+		</section>
+
+		<!-- <script>
         $(document).ready(function() {
     //ПРописываем ID нашего блока        
         $('#rec436284154').addClass('maincenterowl');
@@ -235,6 +442,5 @@
     });
     </script>
        -->
-
-</body>
+	</body>
 </html>
