@@ -116,6 +116,7 @@ strong{
                     font-weight: 300;
                     font-size: 18px;
                     color: #ffffff;
+                    text-align: center;
                 }
             }
         }
@@ -2410,7 +2411,7 @@ strong{
             }
         }
         &-nav{
-            width: 750px !important;
+            width: 1100px !important;
             .nav-link{
                 font-size: 16px !important;
                 margin-right: 10px;
@@ -2596,4 +2597,49 @@ strong{
 .link-info-msk{
     // text-decoration: none;
     color: #ec5401;
+}
+
+.wrapper-doc{
+    padding: 0 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+    color: #171717;
+    padding-top: 90px;
+}
+
+.p-left{
+    padding-top: 0px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.p-left-reg{
+    padding-top: 0px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.h1-center{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.simple-text{
+    text-indent: 30px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.term-heading{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+    margin: 30px 0;
 }
