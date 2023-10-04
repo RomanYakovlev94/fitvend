@@ -2391,6 +2391,7 @@ strong {
   }
   .navbar-nav {
     max-width: 1406px !important;
+    margin-right: 20px;
   }
   .wrapper-doc {
     padding-top: 142px;
